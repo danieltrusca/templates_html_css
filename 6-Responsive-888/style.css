@@ -1,0 +1,230 @@
+:root {
+  --primary: #7ff702;
+  --secondary: #000;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-header {
+}
+
+.header-background {
+  width: 100%;
+  height: 50vh;
+  margin: 0;
+  position: relative;
+}
+
+.header-text {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.title-header {
+  color: var(--primary);
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+.title-second {
+  color: var(--white);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.header-bonus {
+  color: var(--primary);
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.header-up {
+  color: var(--white);
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.header-button {
+  color: var(--primary);
+  text-decoration: none;
+  border: 1px solid var(--primary);
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.payment-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f1f2;
+}
+
+.payment-text {
+  color: #545c5f;
+  font-size: 22px;
+}
+
+.payment-image {
+  padding: 15px;
+}
+
+.promotions-section {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.promotions-title {
+  color: var(--secondary);
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.promotions-line {
+  border: 2px solid var(--secondary);
+  margin: auto;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.promotions-description {
+  color: #545c5f;
+  font-size: 14px;
+}
+
+.promotions-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.promotions-child {
+  flex-basis: 1/2;
+  margin: 5px;
+  background: var(--secondary);
+}
+
+.promotions-text {
+  color: var(--white);
+  padding: 5px;
+}
+
+.footer-section {
+  background: #1b1b1b;
+  text-align: center;
+  padding: 50px;
+}
+
+.footer-title {
+  color: var(--white);
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.footer-line {
+  border: 2px solid var(--white);
+  margin: auto;
+  width: 150px;
+  margin-bottom: 10px;
+  margin-bottom: 14px;
+}
+
+.footer-descriptions {
+  color: var(--white);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.footer-jackpot {
+  color: var(--white);
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.footer-jackpot-box {
+  border: 1px solid var(--secondary);
+  width: 150px;
+  margin: auto;
+  background: var(--secondary);
+  color: var(--white);
+  padding: 10px;
+}
+
+@media (max-width: 760px) {
+  .header-text {
+    top: 50px;
+    left: 10px;
+  }
+
+  .title-header {
+    color: var(--primary);
+    font-size: 22px;
+    margin-bottom: 4px;
+  }
+
+  .title-second {
+    color: var(--white);
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .header-bonus {
+    color: var(--primary);
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  .header-up {
+    color: var(--white);
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .header-button {
+    color: var(--primary);
+    text-decoration: none;
+    border: 1px solid var(--primary);
+    border-radius: 16px;
+    padding: 5px;
+  }
+
+  .payment-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f3f1f2;
+  }
+
+  .payment-text {
+    color: #545c5f;
+    font-size: 22px;
+  }
+
+  .payment-image {
+    width: 100vw;
+  }
+
+  .promotions-child {
+    width: 100vw;
+    margin-bottom: 5px;
+  }
+
+  .promotions-child img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 989px) {
+  .header-text {
+    top: 30px;
+    left: 10px;
+  }
+}

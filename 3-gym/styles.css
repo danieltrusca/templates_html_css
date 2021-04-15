@@ -190,3 +190,128 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* membership section */
+.membership {
+  background: var(--black);
+  color: var(--white);
+  padding: 6rem calc((100vw-1200px) / 2);
+  text-align: center;
+}
+
+.membership h1 {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  padding: 0 1rem;
+}
+
+.membership-desc {
+  margin-bottom: 3rem;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  padding: 1rem;
+}
+
+.membership-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.membership-card {
+  padding: 2rem;
+  height: 450px;
+  width: 320px;
+  background: var(--white);
+  color: var(--black);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.membership-perks {
+  min-height: 150px;
+}
+
+.membership-card p {
+  margin-bottom: 1rem;
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: var(--red);
+}
+
+.membership-card h3 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 760px) {
+  .membership-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .membership-card {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Teams section */
+.team {
+  padding: 8rem calc((100vw-1200px) / 2);
+}
+
+.team-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(auto, 350px);
+}
+
+.team-card {
+  margin: 1rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.team-text {
+  padding: 1rem;
+}
+
+.team-text h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.team-desc {
+  font-size: clamp(1rem, 3vw, 2rem);
+  line-height: 1.4;
+}
+
+.team-card p {
+  position: absolute;
+  bottom: 30px;
+  color: var(--white);
+  left: 25px;
+  font-size: 3rem;
+}
+
+.team-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.team-text:nth-child(1) {
+  grid-row: 1/3;
+  grid-column: 2/3;
+}
+
+.team-text:nth-child(2) {
+  grid-row: 1/3;
+  grid-column: 2/3;
+}

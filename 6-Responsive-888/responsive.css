@@ -1,0 +1,277 @@
+:root {
+  --primary: #7ff702;
+  --secondary: #000;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-header {
+  width: 100vw;
+}
+
+.header-background {
+  width: 100vw;
+  height: 40vh;
+
+  position: relative;
+}
+
+.header-text {
+  position: absolute;
+  top: 40px;
+  left: 15px;
+}
+
+.title-header {
+  color: var(--primary);
+  font-size: 33px;
+  margin-bottom: 6px;
+}
+
+.title-second {
+  color: var(--white);
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.header-bonus {
+  color: var(--primary);
+  font-size: 36px;
+  margin-bottom: 6px;
+}
+
+.header-up {
+  color: var(--white);
+  font-size: 22px;
+  margin-bottom: 22px;
+}
+
+.header-button {
+  color: var(--primary);
+  text-decoration: none;
+  border: 1px solid var(--primary);
+  border-radius: 16px;
+  padding: 10px;
+}
+
+/* Payment Section */
+
+.payment-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f3f1f2;
+  padding: 20px 5px;
+}
+
+.payment-text {
+  color: #545c5f;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.payment-image {
+  width: 100%;
+  padding: 0 15px;
+}
+
+/* Promotions Section */
+.promotions-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.promotions-title {
+  color: var(--secondary);
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.promotions-line {
+  border: 2px solid var(--secondary);
+  margin: auto;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.promotions-description {
+  color: #545c5f;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.promotions-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.promotions-child {
+  flex-basis: 100%;
+  margin-bottom: 10px;
+  background: var(--secondary);
+}
+
+.promotions-child img {
+  width: 100%;
+}
+
+.promotions-text {
+  color: var(--white);
+  padding: 5px;
+}
+
+.promotions-child-more {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+.promotions-link-1 {
+  text-decoration: none;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.promotions-link-2 {
+  color: var(--white);
+}
+
+.more-promotions {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.more-promotions h2 a {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+/* End Promotions Section */
+
+/* Footer Section */
+.footer-section {
+  background: #1b1b1b;
+  text-align: center;
+  padding: 50px;
+}
+
+.footer-title {
+  color: var(--white);
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.footer-line {
+  border: 2px solid var(--white);
+  margin: auto;
+  width: 150px;
+  margin-bottom: 10px;
+  margin-bottom: 14px;
+}
+
+.footer-descriptions {
+  color: var(--white);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.footer-jackpot {
+  color: var(--white);
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.footer-jackpot-box {
+  border: 1px solid var(--secondary);
+  width: 80vw;
+  margin: auto;
+  background: var(--secondary);
+  color: var(--primary);
+  padding: 10px;
+  font-size: 28px;
+}
+
+/* end footer section */
+
+/* media queries */
+
+@media (min-width: 576px) {
+  .header-text {
+    top: 50px;
+    left: 15px;
+  }
+  .promotions-child {
+    flex-basis: 46%;
+    margin: 1%;
+  }
+  .promotions-text {
+    margin-top: 10px;
+  }
+
+  .footer-jackpot-box {
+    width: 40vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .header-background {
+    height: 50vh;
+  }
+  .header-text {
+    top: 60px;
+    left: 70px;
+    padding-bottom: 30px;
+  }
+  .payment-section {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+
+  .payment-section h3 {
+    font-size: 16px;
+  }
+
+  .payment-section img {
+    width: 200px;
+  }
+
+  .payment-image {
+    padding: 30px;
+    flex-basis: 20%;
+  }
+
+  .promotions-container {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .promotions-child {
+    flex-basis: 370px;
+    margin: 5px;
+  }
+
+  .promotions-child-more {
+    display: none;
+  }
+
+  .footer-jackpot-box {
+    width: 30vw;
+  }
+}
